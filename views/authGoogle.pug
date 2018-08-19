@@ -1,0 +1,15 @@
+doctype html
+html
+    head
+        title="Auth with Google"
+        meta(http-equiv="x-ua-compatible", content="ie=edge")
+        meta(charset="UTF=8")
+    body
+        form(action="/thankyou", method="GET")
+            p
+                label(for="login") Login: 
+                input#login(type="text" name="login")
+            p    
+                label(for="password") Password:
+                input#password(type="password" name="password")
+            input(type="submit" value="Submit")    
