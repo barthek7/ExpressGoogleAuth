@@ -5,12 +5,13 @@ html
         meta(http-equiv="x-ua-compatible", content="ie=edge")
         meta(charset="UTF=8")
     body
-        h1 
-        form(action="/thankyou", method="GET")
+        h1 This is my first app using Pug and Express
+        p Please log in to see what happens 
+        form(action="/auth/google", method="GET")
             p
                 label(for="login") Login: 
                 input#login(type="text" name="login")
             p    
                 label(for="password") Password:
                 input#password(type="password" name="password")
-            input(type="submit" value="Submit")    
+            input(type="submit" value="Submit")   
